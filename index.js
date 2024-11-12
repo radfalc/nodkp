@@ -256,5 +256,5 @@ mDB.connect(process.env.ORMONGO_URL, (err, database) => {
     }
   });
 
-  client.login(discord_api_token);
+  client.login(DISCORD_TOKEN);
 });
