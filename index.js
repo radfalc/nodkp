@@ -212,7 +212,7 @@ function bid(message, database, option) {
 
 /* Handler */
 var mDB = require('mongodb').MongoClient;
-mDB.connect(process.env.MONGODB_URI, (err, database) => {
+mDB.connect(process.env.ORMONGO_URL, (err, database) => {
 
   client.on('ready', () => {
     load_available(database);
